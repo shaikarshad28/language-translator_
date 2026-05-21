@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indian Language Translator</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h2>Indian Language Translator</h2>
+
+    <textarea
+      id="inputText"
+      placeholder="Enter text here..."
+    ></textarea>
+
+    <div class="row">
+
+      <!-- Source Language -->
+      <select id="sourceLang">
+        <option value="en">English</option>
+        <option value="hi">Hindi</option>
+        <option value="kn">Kannada</option>
+        <option value="ml">Malayalam</option>
+        <option value="bn">Bengali</option>
+        <option value="gu">Gujarati</option>
+        <option value="pa">Punjabi</option>
+      </select>
+
+      <!-- Target Language -->
+      <select id="targetLang">
+        <option value="hi">Hindi</option>
+        <option value="en">English</option>
+        <option value="kn">Kannada</option>
+        <option value="ml">Malayalam</option>
+        <option value="bn">Bengali</option>
+        <option value="gu">Gujarati</option>
+        <option value="pa">Punjabi</option>
+      </select>
+
+    </div>
+
+    <button onclick="translateText()">
+      Translate
+    </button>
+
+    <div class="output" id="translatedText">
+      Translation will appear here...
+    </div>
+
+    <div class="actions">
+
+      <button class="copy-btn" onclick="copyText()">
+        Copy
+      </button>
+
+      <button class="speak-btn" onclick="speakText()">
+        Speak
+      </button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
